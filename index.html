@@ -19,11 +19,6 @@
 
     <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
     <link rel="stylesheet" media="screen" href="assets/css/style.css" />
-
-    <!-- html5shiv aka html5 shim. Supporting HTML5 and CSS for IE browsers less than IE9. -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-      <![endif]-->
     </head>
     
     <body>
@@ -34,7 +29,8 @@
           <div class="wrapper">
             <div class="home_bg">
               <h1>
-                <img src="assets/vendor/finloans_logo.png" alt="Finloans">Finloans
+                <img src="assets/vendor/finloans_logo.png" alt="Finloans">
+                <span>Finloans</span>
               </h1>
             
               <nav>
@@ -48,37 +44,41 @@
                   <li>contact</li>
                 </ul>
               
-                <ul>
-                  <li>+10 585 555 658</li>
-                  <li>Apply For A Loan</li>
-                </ul>
               </nav>
+
+              <ul>
+                <li>
+                  <a href="javascript:void(0)" class="fa fa-phone" aria-hidden="true"></a>
+                  +10 585 555 658
+                </li>
+                <li>Apply For A Loan</li>
+              </ul>
             </div>
           </div>
       </header>
       <!--header section start-->
       <!--main section start-->
       <main>
-        <section>
+        <section class="main_content">
           <div class="wrapper">
             <section>
               <p>Get Loan for your Business growth or startup</p>
               <a href="#FIXME">How It Works</a>
             </section>
             <section>
-              <h3>How much do you want?</h3>
+              <p>How much do you want?</p>
               <form action="#FIXME" method="post">
                 <p>We provide online instant cash loans with quick</p>
-                <input type="number" name="Amount" id="amount_box">
-                <input type="number" name="Month" id="month_box">
-                <p>you have to pay: $0</p>
+                <input type="number" name="Amount" id="amount_box" placeholder="Amount"> <br>
+                <input type="number" name="Month" id="month_box" placeholder="Month">
+                <p>You have to pay: $0</p>
                 <input type="submit" value="Continue">
               </form>
             </section>
           </div>
         </section>
 
-        <section>
+        <section class="">
           <div class="wrapper">
             <h2>What we offer for you</h2>
             <p>We provide online instant cash loans with quick approval that suit your term</p>
