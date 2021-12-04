@@ -205,7 +205,7 @@ li {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-main .wrapper{
+main .wrapper, footer .wrapper{
   max-width: 1440px;
   width: 82%;
   margin: auto;
@@ -464,6 +464,7 @@ ul li::marker{
 .choose_us_section .wrapper section{
   width: 30rem;
   align-self: center;
+  padding: 2rem;
 }
 
 .choose_us_section .wrapper section h2{
@@ -725,4 +726,101 @@ ul li::marker{
   margin: auto 0;
 }
 
+footer section .wrapper > section {
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+  flex-wrap: wrap;
+  padding: 8rem 0 4rem 0;
+}
 
+footer section .wrapper section:first-child > div h2 img{
+  height: 40px;
+  width: 40px;
+  padding-right: 1rem;
+}
+
+footer section .wrapper section:first-child div:first-child h2{
+  font-size: 1.5rem;
+  display: block;
+}
+
+footer section .wrapper section:first-child > div p{
+  font-size: 14px;
+  padding: 2rem 0;
+  color: gray;
+}
+
+footer section .wrapper section:first-child > div p ~ ul{
+  display: flex;
+  justify-content: space-between;
+}
+
+footer section .wrapper section:first-child > div p ~ ul li a{
+  border: 1px solid lightgray;
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: lightgray;
+}
+
+footer section .wrapper section section{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 50rem;
+  /* padding: auto; */
+  /* margin: auto; */
+}
+
+
+footer section .wrapper section div h2{
+  font-weight: bolder;
+  padding-bottom: 3rem;
+  font-size: 16px;
+}
+
+footer section .wrapper section ul li{
+  display: list-item;
+  font-size: 14px;
+  color: gray;
+  padding: 1rem 0;
+}
+
+footer section .wrapper section div:last-child div{
+  border: 1px solid lightgray;
+  width: fit-content;
+  padding: 0.2rem 0.2rem 0.2rem 0.8rem;
+  border-radius: 5px;
+}
+
+footer section .wrapper section div:last-child input{
+  border: none;
+  font-size: 14px;
+}
+
+footer section .wrapper section div:last-child a{
+  color: white;
+  background: #408bfe;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+footer section .wrapper section div:last-child p{
+  width: 20rem;
+}
+
+footer section .wrapper > p:last-child{
+  text-align: center;
+  padding: 3rem 0;
+  font-size: 14px;
+  font-weight: bolder;
+  color: gray;
+}
+
+footer section .wrapper > p:last-child span{
+  color: #408bfe;
+}
