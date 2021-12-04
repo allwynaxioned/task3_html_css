@@ -506,3 +506,63 @@ ul li::marker{
   font-size: 14px;
 }
 
+.how_it_work_section  .wrapper{
+  margin: 10rem auto 4rem auto;
+}
+
+.how_it_work_section .wrapper > h2::before{
+  content: '';
+  position: absolute;
+  background: #3ed4d6;
+  width: 50px;
+  height: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: -10px auto;
+  text-align: center;
+}
+
+.how_it_work_section .wrapper > h2{
+  font-size: 45px;
+  /* font-weight: 600; */
+  color: #071d38;
+  text-align: center;
+}
+
+.how_it_work_section .wrapper > p{
+  color: gray;
+  text-align: center;
+  font-size: 14px;
+  padding: 1rem 0;
+}
+
+.how_it_work_section .wrapper ul{
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.steps_box span{
+  /* content: '01'; */
+  /* position: absolute; */
+  display: inline-block;
+  color: #408bfe;
+  margin: 2rem 0;
+  background:#ddf0ff;
+  padding: 1.5rem;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+.steps_box h2{
+  font-size: 20px;
+  color: #071d38;
+} 
+
+.steps_box p{
+  color: gray;
+  width: 18rem;
+  font-size: 14px;
+  padding: 1rem 0;
+}
+
