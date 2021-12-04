@@ -579,7 +579,7 @@ ul li::marker{
   height: 40rem;
   width: 40rem;
   /* margin: calc(); */
-  margin-left: -11%;
+  margin-left: -14%;
 }
 
 .faq_section .wrapper section{
@@ -618,3 +618,111 @@ ul li::marker{
   padding: 2rem 0 2rem 2rem;
   width: 25rem;
 }
+
+.testimonial_section .wrapper section{
+  display: flex;
+  padding: 6rem 0;
+}
+
+.testimonial_section .wrapper section img{
+  height: 14rem;
+  width: 14rem;
+  border-radius: 50%;
+}
+
+.testimonial_section .wrapper section > a{
+  display: flex;
+  background: #3ed4d6;
+  color: white;
+  padding: 1.5rem;
+  margin-left: -50px;
+  border-radius: 50%;
+  align-self: end;
+  font-size: 20px;
+}
+
+.testimonial_section .wrapper section > p{
+  color: #071d38;
+  align-self: center;
+  width: 50vw;
+  line-height: 30px;
+  padding: 0 4rem;
+}
+
+.testimonial_section .wrapper section p span{
+  display: block;
+  color: gray;
+}
+
+.testimonial_section .wrapper section p ~ a{
+  background: #ddf0ff;
+  box-sizing: border-box;
+  color: #408bfe;
+  
+  /* position: absolute; */
+  /* float: right; */
+  text-align: center;
+  display: block;
+  height: auto;
+  width: 70px;
+  border-radius: 50%;
+  align-self: center;
+  justify-self: center;
+}
+
+.testimonial_section .wrapper section p + a{
+  margin-top: -10rem;
+}
+
+.testimonial_section .wrapper section p + a ~ a{
+  margin-top: 1rem;
+  margin-left: -4rem;
+}
+
+.testimonial_section .wrapper ul{
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 0 10rem 0;
+  filter: grayscale(100%);
+}
+
+.testimonial_section .wrapper ul li img{
+  height: 4rem;
+  width: 4rem;
+  padding: 0 1rem;
+  opacity: 0.5;
+}
+
+.testimonial_section .wrapper ul li{
+  color: lightgray;
+  font-size: 30px;
+}
+
+.bottom_apply_section .wrapper{
+  width: 100%;
+}
+
+.bottom_apply_section .wrapper .bottom_apply_loan_img{
+  background: linear-gradient(rgba(49, 65, 94, 0.5),rgba(49, 65, 94, 0.5)),url("https://images.unsplash.com/photo-1523289333742-be1143f6b766?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80") no-repeat;
+  padding: 0 9%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 8rem 8rem;
+}
+
+.bottom_apply_loan_img p{
+  font-size: 2.5rem;
+  color: white;
+}
+
+.bottom_apply_loan_img a{
+  /* font-size: 2rem; */
+  background: #3ed4d6;
+  color: white;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  margin: auto 0;
+}
+
+
