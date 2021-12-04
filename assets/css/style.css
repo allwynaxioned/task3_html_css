@@ -566,3 +566,55 @@ ul li::marker{
   padding: 1rem 0;
 }
 
+.faq_section .wrapper{
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem 0;
+  /* width: 100vw; */
+
+}
+
+.faq_section .wrapper img{
+  /* position: absolute; */
+  height: 40rem;
+  width: 40rem;
+  /* margin: calc(); */
+  margin-left: -11%;
+}
+
+.faq_section .wrapper section{
+  width: 25rem;
+  padding: 2rem;
+}
+
+.faq_section .wrapper section h2{
+  font-size: 40px;
+  color: #071d38;
+}
+
+.faq_section .wrapper section ul{
+  padding: 4rem 0;
+  color: #071d38;
+}
+
+.faq_section .wrapper section ul li a{
+  font-size: 2rem;
+  vertical-align: middle;
+  color: #071d38;
+  padding-right: 2rem;
+  opacity: 0.5;
+}
+
+.faq_section .wrapper section ul li{
+  display: list-item;
+  /* font-weight: bold; */
+  padding: 1rem;
+  border-bottom: 1px solid lightgray;
+}
+
+.faq_section .wrapper section ul li p{
+  font-size: 14px;
+  color: gray;
+  padding: 2rem 0 2rem 2rem;
+  width: 25rem;
+}
