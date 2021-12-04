@@ -212,37 +212,36 @@ main .wrapper, footer .wrapper,header .wrapper{
 }
 
 .home_menu{
+  width: 82%;
+  padding: 1rem 0;
   display: flex;
   justify-content: space-between;
-  /* padding: 1rem 3rem; */
-  padding: 1rem 0;
   position: absolute;
-  width: 82%;
 }
 
 .bg_img{
+  height: 100vh;
   background: linear-gradient(rgba(49, 65, 94, 0.5),rgba(49, 65, 94, 0.5)), url("https://images.unsplash.com/photo-1568992687947-868a62a9f521?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80") no-repeat;
   background-size: 100% 100%;
-  height: 100vh;
 }
 
 .home_menu h1 img{
   width: 40px;
   height: 40px;
-  display: inline;
   padding: 0 0.2rem 0 0;
+  display: inline;
 }
 
 .home_menu h1{
+  color: white;
   font-size: 22px;
   font-weight: bold;
-  color: white;
 }
 
 nav{
   display: flex;
-  font-size: 12px;
   color: white;
+  font-size: 12px;
   font-weight: bold;
 }
 
@@ -251,60 +250,65 @@ nav ul li{
 }
 
 .home_menu > ul a{
-  color: #3ed4d6;
   padding: 0 0.5rem; 
+  color: #3ed4d6;
 }
 
 .home_menu > ul li{
+  padding: 0.5rem;
   color: white;
   font-size: 12px;
-  padding: 0.5rem;
   font-weight: bold;
 }
 
 .home_menu > ul li:last-child{
-  color: #3ed4d6;
+  padding: 0.8rem;
   border: 1px solid #3ed4d6;
   border-radius: 5px;
-  padding: 0.8rem;
+  color: #3ed4d6;
+}
+
+.home_menu > a{
+  padding: 0.4rem 0;
+  display: none;
+  color: white;
+  font-size: 2rem;
 }
 
 .main_content .wrapper{
   max-width: 1440px;
   width: auto;
-  /* margin: auto; */
+  padding: 9%;
   display: flex;
+  position: absolute;
+  top: 10%;
   justify-content: space-between;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  position: absolute;
-  top: 10%;
-  padding: 9%;
 }
 
 .main_content .wrapper section:first-child{
+  width: 47%;
   color: white;
   font-size: 50px;
-  width: 47%;
   align-self: center;
-  /* margin-top: 5rem; */
 }
 
 .main_content .wrapper section:first-child a{
-  font-size: 14px;
-  font-weight: 600;
+  padding: 1rem 2rem;
   margin: 2rem 0;
   border-radius: 5px;
-  color: white;
   background: #3ed4d6;
-  padding: 1rem 2rem;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 .main_content .wrapper section:last-child{
-  color: grey;
   padding: 3rem;
-  background: white;
   border-radius: 5px;
+  background: white;
+  color: grey;
 }
 
 .main_content .wrapper section:last-child > p{
@@ -319,13 +323,13 @@ nav ul li{
 section form > input{
   width: 100%;
   padding: 1rem 1rem;
+  margin: 0.5rem 0;
   border: 1px solid lightgray;
+  border-radius: 5px;
+  font-weight: 600;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  border-radius: 5px;
-  font-weight: 600;
-  margin: 0.5rem 0;
 }
 
 section form > input[type="submit"]{
@@ -333,106 +337,103 @@ section form > input[type="submit"]{
   color: white;
 }
 
-.offer_section  .wrapper{
+.offer_section .wrapper{
   margin: 10rem auto 4rem auto;
 }
 
 .offer_section .wrapper > h2::before{
-  content: '';
-  position: absolute;
-  background: #3ed4d6;
   width: 50px;
   height: 3px;
   margin: -10px 15%;
+  position: absolute;
+  background: #3ed4d6;
   text-align: center;
+  content: '';
 }
 
 .offer_section .wrapper > h2{
-  font-size: 45px;
-  /* font-weight: 600; */
   color: #071d38;
+  font-size: 45px;
   text-align: center;
 }
 
 .offer_section .wrapper > p{
-  color: gray;
-  text-align: center;
-  font-size: 14px;
   padding: 1rem 0;
+  color: gray;
+  font-size: 14px;
+  text-align: center;
 }
 
 .cards ul{
   display: flex;
-  /* flex-flow:wrap; */
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .cards div{
-  background: linear-gradient(0deg, #1b4680,#408bfe);
-  border-radius: 5px;
   padding: 2.5rem;
-  text-align: center;
   margin-top: 4rem;
+  border-radius: 5px;
+  background: linear-gradient(0deg, #1b4680,#408bfe);
+  text-align: center;
 }
 
 .cards div > a{
-  font-size: 4rem;
   color: white;
+  font-size: 4rem;
 }
 
 .cards div h2{
-  font-size: 14px;
-  color: white;
   padding: 2rem 0 0 0;
+  color: white;
+  font-size: 14px;
 }
 
 .cards div > span{
+  padding: 1rem 0 1rem 0;
   display: block;
   color: #3ed4d6;
   font-size: 1.6rem;
-  padding: 1rem 0 1rem 0;
 }
 
 .cards div > ul::before{
-  content: '';
+  width: 100%;
+  height: 1px;
+  margin: 2rem 0;
   display: block;
   background: #3ed4d6;
-  height: 1px;
-  width: 100%;
+  content: '';
   opacity: 0.2;
-  margin: 2rem 0;
 }
 
 .cards div ul li{
   display: list-item;
+  color: white;
   font-size: 14px;
   text-align: left;
-  color: white;
   list-style: disc;
   list-style-position: inside;
 }
 
 ul li::marker{
-  font-size: 1.5rem;
   margin: 0;
   color: #3ed4d6;
+  font-size: 1.5rem;
 }
 
 .cards div ul{
-  /* padding: 2rem; */
+  margin: 2rem 0 0 0;
   display: flex;
   flex-direction: column;
-  margin: 2rem 0 0 0;
 }
 
 .cards div ul li:last-child{
-  list-style: none;
-  background: #3ed4d6;
+  margin: 2.5rem 0 0 0;
   padding: 1rem 2rem;
   border-radius: 5px;
+  background: #3ed4d6;
+  list-style: none;
   text-align: center;
-  margin: 2.5rem 0 0 0;
 }
 
 .cards div ul li:last-child a{
@@ -440,10 +441,9 @@ ul li::marker{
 }
 
 .choose_us_section .wrapper{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   padding: 5rem 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 .choose_us_section .wrapper img{
@@ -453,29 +453,29 @@ ul li::marker{
 
 .choose_us_section .wrapper section{
   width: 30rem;
-  align-self: center;
   padding: 2rem;
+  align-self: center;
 }
 
 .choose_us_section .wrapper section h2{
-  font-size: 40px;
   padding: 2rem 0;
   color: #071d38;
+  font-size: 40px;
 }
 
 .choose_us_section .wrapper section p{
+  padding: 0.5rem 0;
   display: block;
   color: gray;
-  padding: 0.5rem 0;
   font-size: 14px;
 }
 
 .choose_us_section .wrapper section ul li{
   display: list-item;
-  list-style: disc;
-  list-style-position: inside;
   font-size: 14px;
   color: #071d38;
+  list-style: disc;
+  list-style-position: inside;
 }
 
 .choose_us_section .wrapper section ul li::marker{
@@ -483,13 +483,13 @@ ul li::marker{
 }
 
 .choose_us_section .wrapper section a{
-  list-style: none;
-  background: #3ed4d6;
-  border-radius: 5px;
-  padding: 1rem 2rem;
-  color: white;
   margin: 2rem 0;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  background: #3ed4d6;
+  color: white;
   font-size: 14px;
+  list-style: none;
 }
 
 .how_it_work_section  .wrapper{
@@ -497,71 +497,69 @@ ul li::marker{
 }
 
 .how_it_work_section .wrapper > h2::before{
-  content: '';
-  position: absolute;
-  background: #3ed4d6;
   width: 50px;
   height: 3px;
-  left: 50%;
-  transform: translateX(-50%);
   margin: -10px auto;
+  position: absolute;
+  left: 50%;
+  background: #3ed4d6;
   text-align: center;
+  transform: translateX(-50%);
+  content: '';
 }
 
 .how_it_work_section .wrapper > h2{
-  font-size: 45px;
-  /* font-weight: 600; */
   color: #071d38;
+  font-size: 45px;
   text-align: center;
 }
 
 .how_it_work_section .wrapper > p{
-  color: gray;
-  text-align: center;
-  font-size: 14px;
   padding: 1rem 0;
+  color: gray;
+  font-size: 14px;
+  text-align: center;
 }
 
 .how_it_work_section .wrapper ul{
+  padding: 2rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 2rem;
 }
 
 .steps_box span{
-  display: inline-block;
-  color: #408bfe;
-  margin: 2rem 0;
-  background:#ddf0ff;
   padding: 1.5rem;
+  margin: 2rem 0;
   border-radius: 50%;
+  display: inline-block;
+  background:#ddf0ff;
+  color: #408bfe;
   font-weight: bold;
 }
 
 
 .steps_box h2{
-  font-size: 20px;
   color: #071d38;
+  font-size: 20px;
 } 
 
 .steps_box p{
-  color: gray;
   width: 18rem;
-  font-size: 14px;
   padding: 1rem 0;
+  color: gray;
+  font-size: 14px;
 }
 
 .faq_section .wrapper{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
   padding: 2rem 0;  
+  display: flex;
+  justify-content: space-around;
 }
 
 .faq_section .wrapper img{
-  height: 40rem;
   width: 40rem;
+  height: 40rem;
   margin-left: -14%;
 }
 
@@ -581,56 +579,54 @@ ul li::marker{
 }
 
 .faq_section .wrapper section ul li a{
+  padding-right: 2rem;
+  color: #071d38;
   font-size: 2rem;
   vertical-align: middle;
-  color: #071d38;
-  padding-right: 2rem;
   opacity: 0.5;
 }
 
 .faq_section .wrapper section ul li{
-  display: list-item;
-  /* font-weight: bold; */
   padding: 1rem;
   border-bottom: 1px solid lightgray;
+  display: list-item;
 }
 
 .faq_section .wrapper section ul li p{
-  font-size: 14px;
-  color: gray;
-  padding: 2rem 0 2rem 2rem;
   width: 25rem;
+  padding: 2rem 0 2rem 2rem;
+  color: gray;
+  font-size: 14px;
 }
 
 .testimonial_section .wrapper section{
-  display: flex;
-  flex-wrap: wrap;
   padding: 6rem 0;
+  display: flex;
 }
 
 .testimonial_section .wrapper section img{
-  height: 14rem;
   width: 14rem;
+  height: 14rem;
   border-radius: 50%;
 }
 
 .testimonial_section .wrapper section > a{
-  display: flex;
-  background: #3ed4d6;
-  color: white;
   padding: 1.5rem;
   margin-left: -50px;
   border-radius: 50%;
-  align-self: end;
+  display: flex;
+  background: #3ed4d6;
+  color: white;
   font-size: 20px;
+  align-self: end;
 }
 
 .testimonial_section .wrapper section > p{
+  width: 50vw;
+  padding: 0 4rem;
+  line-height: 30px;
   color: #071d38;
   align-self: center;
-  width: 50vw;
-  line-height: 30px;
-  padding: 0 4rem;
 }
 
 .testimonial_section .wrapper section p span{
@@ -639,15 +635,15 @@ ul li::marker{
 }
 
 .testimonial_section .wrapper section p ~ a{
+  width: 70px;
+  height: auto;
+  border-radius: 50%;
+  display: block;
   background: #ddf0ff;
-  box-sizing: border-box;
   color: #408bfe;
   text-align: center;
-  display: block;
-  height: auto;
-  width: 70px;
-  border-radius: 50%;
   align-self: center;
+  box-sizing: border-box;
   justify-self: center;
 }
 
@@ -661,23 +657,22 @@ ul li::marker{
 }
 
 .testimonial_section .wrapper ul{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   padding: 4rem 0 10rem 0;
+  display: flex;
+  justify-content: space-between;
   filter: grayscale(100%);
 }
 
 .testimonial_section .wrapper ul li img{
-  height: 4rem;
   width: 4rem;
+  height: 4rem;
   padding: 0 1rem;
   opacity: 0.5;
 }
 
 .testimonial_section .wrapper ul li{
-  color: lightgray;
   padding: 1rem 0;
+  color: lightgray;
   font-size: 30px;
 }
 
@@ -686,52 +681,50 @@ ul li::marker{
 }
 
 .bottom_apply_section .wrapper .bottom_apply_loan_img{
-  background: linear-gradient(rgba(49, 65, 94, 0.5),rgba(49, 65, 94, 0.5)),url("https://images.unsplash.com/photo-1523289333742-be1143f6b766?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80") no-repeat;
-  padding: 0 9%;
+  padding: 8rem 8rem;
   margin: auto;
   display: flex;
+  background: linear-gradient(rgba(49, 65, 94, 0.5),rgba(49, 65, 94, 0.5)),url("https://images.unsplash.com/photo-1523289333742-be1143f6b766?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80") no-repeat;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 8rem 8rem;
 }
 
 .bottom_apply_loan_img p{
-  font-size: 2.5rem;
   color: white;
+  font-size: 2.5rem;
 }
 
 .bottom_apply_loan_img a{
-  /* font-size: 2rem; */
-  background: #3ed4d6;
-  color: white;
-  border-radius: 5px;
   padding: 1rem 2rem;
   margin: auto 0;
+  border-radius: 5px;
+  background: #3ed4d6;
+  color: white;
 }
 
 footer section .wrapper > section {
+  width: auto;
+  padding: 8rem 0 4rem 0;
   display: flex;
   justify-content: space-between;
-  width: auto;
   flex-wrap: wrap;
-  padding: 8rem 0 4rem 0;
 }
 
 footer section .wrapper section:first-child > div h2 img{
-  height: 40px;
   width: 40px;
+  height: 40px;
   padding-right: 1rem;
 }
 
 footer section .wrapper section:first-child div:first-child h2{
-  font-size: 1.5rem;
   display: block;
+  font-size: 1.5rem;
 }
 
 footer section .wrapper section:first-child > div p{
-  font-size: 14px;
   padding: 2rem 0;
   color: gray;
+  font-size: 14px;
 }
 
 footer section .wrapper section:first-child > div p ~ ul{
@@ -740,56 +733,54 @@ footer section .wrapper section:first-child > div p ~ ul{
 }
 
 footer section .wrapper section:first-child > div p ~ ul li a{
+  width: 2rem;
+  height: 2rem;
   border: 1px solid lightgray;
   border-radius: 50%;
-  height: 2rem;
-  width: 2rem;
   display: flex;
-  justify-content: center;
-  align-items: center;
   color: lightgray;
+  align-items: center;
+  justify-content: center;
 }
 
 footer section .wrapper section section{
+  width: 50rem;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  width: 50rem;
-  /* padding: auto; */
-  /* margin: auto; */
 }
 
 footer section .wrapper section div h2{
-  font-weight: bolder;
   padding-bottom: 3rem;
+  font-weight: bolder;
   font-size: 16px;
 }
 
 footer section .wrapper section ul li{
-  display: list-item;
-  font-size: 14px;
-  color: gray;
   padding: 1rem 0;
+  display: list-item;
+  color: gray;
+  font-size: 14px;
 }
 
 footer section .wrapper section div:last-child div{
-  border: 1px solid lightgray;
   width: fit-content;
-  padding: 0.2rem 0.2rem 0.2rem 0.8rem;
+  border: 1px solid lightgray;
   border-radius: 5px;
+  padding: 0.2rem 0.2rem 0.2rem 0.8rem;
 }
 
 footer section .wrapper section div:last-child input{
+  height: 2rem;
   border: none;
   font-size: 14px;
-  height: 2rem;
 }
 
 footer section .wrapper section div:last-child a{
-  color: white;
-  background: #408bfe;
   padding: 0.5rem 1rem;
   border-radius: 5px;
+  background: #408bfe;
+  color: white;
 }
 
 footer section .wrapper section div:last-child p{
@@ -797,11 +788,11 @@ footer section .wrapper section div:last-child p{
 }
 
 footer section .wrapper > p:last-child{
-  text-align: center;
   padding: 3rem 0;
+  color: gray;
+  text-align: center;
   font-size: 14px;
   font-weight: bolder;
-  color: gray;
 }
 
 footer section .wrapper > p:last-child span{
@@ -809,7 +800,7 @@ footer section .wrapper > p:last-child span{
 }
 
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px) {
 
   nav{
     display: none;
@@ -819,21 +810,39 @@ footer section .wrapper > p:last-child span{
     display: none;
   }
 
-  .main_content .wrapper section:first-child{
-    font-size: 30px;
-    width: 100%;
+  .home_menu > a{
+    display: block;
   }
+
+  .main_content .wrapper section:first-child{
+    width: 100%;
+    font-size: 30px;
+  }
+
   .main_content .wrapper section:last-child{
     padding: 1.5rem;
   }
+
   .main_content .wrapper section:last-child > p{
     font-size: 25px;
   }
+  
+  .offer_section .wrapper{
+    margin: 6rem auto 4rem auto;
+  }
 
+  .cards div h2{
+    padding: 1rem 0 0 0;
+  }
+
+  .cards div ul{
+    margin: 0;
+  }
 
   
   .choose_us_section .wrapper{
     padding: 2rem 0;
+    flex-wrap: wrap;
   }
 
   .choose_us_section .wrapper img{
@@ -861,9 +870,13 @@ footer section .wrapper > p:last-child span{
     padding: 0;
   }
 
+  .faq_section .wrapper{
+    flex-wrap: wrap;
+  }
+  
   .faq_section .wrapper img{
-    height: 20rem;
     width: 20rem;
+    height: 20rem;
     margin-left: 0;
   }
   
@@ -885,9 +898,10 @@ footer section .wrapper > p:last-child span{
   .faq_section .wrapper section ul li p{
     width: 15rem;
   }
-
+  
   .testimonial_section .wrapper section{
     padding: 2rem 0;
+    flex-wrap: wrap;
   }
   
   .testimonial_section .wrapper section > p{
@@ -911,6 +925,7 @@ footer section .wrapper > p:last-child span{
   
   .testimonial_section .wrapper ul{
     padding: 2rem 0 4rem 0;
+    flex-wrap: wrap;
   }
   
   .bottom_apply_section .wrapper .bottom_apply_loan_img{
@@ -918,8 +933,8 @@ footer section .wrapper > p:last-child span{
   }
   
   .bottom_apply_loan_img p{
-    font-size: 2rem;
     padding-bottom: 2rem;
+    font-size: 2rem;
   }
   
   footer section .wrapper section:first-child > div p{
@@ -944,14 +959,10 @@ footer section .wrapper > p:last-child span{
   }
   
   footer section .wrapper section div:last-child input{
-    font-size: 14px;
     height: 2rem;
+    padding-left: 10px;
     border: 1px solid lightgray;
     border-radius: 5px;
-    padding-left: 10px;
+    font-size: 14px;
   }
-}
-
-@media screen and (max-width: 425px) {
-
 }
